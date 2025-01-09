@@ -1,0 +1,101 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+path{
+  stroke: rgb(212, 227, 255);
+  stroke-width: 2px;
+}
+
+#path-tittle{
+font-size: 18px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: center;
+margin-left: 40px;
+color: #2334cf;
+}
+
+#path198:hover{
+  fill: rgb(0, 159, 187);
+  stroke: rgb(0, 247, 255);
+  stroke-width: 4px;
+  transition: fill 0.3s;
+  cursor:pointer;
+}
+
+#path236:hover{
+  fill: rgb(0, 159, 187);
+  stroke: rgb(0, 247, 255);
+  stroke-width: 4px;
+  transition: fill 0.3s;
+  cursor:pointer;
+}
+
+#path1246:hover{
+  fill: rgb(0, 159, 187);
+  stroke: rgb(0, 247, 255);
+  stroke-width: 4px;
+  transition: fill 0.3s;
+  cursor:pointer;
+}
+
+#path18:hover{
+  fill: rgb(0, 159, 187);
+  stroke: rgb(0, 247, 255);
+  stroke-width: 4px;
+  transition: fill 0.3s;
+  cursor:pointer;
+}
+
+#path1126:hover{
+  fill: rgb(0, 159, 187);
+  stroke: rgb(0, 247, 255);
+  stroke-width: 4px;
+  transition: fill 0.3s;
+  cursor:pointer;
+}
+
+#br-go:hover{
+  fill: linear-gradient(45deg,#FFF000,#FF7300,)
+  stroke: rgb(0, 247, 255);
+  stroke-width: 4px;
+  transition: fill 0.3s;
+  cursor:pointer;
+}
+
+.tooltip{
+  pointer-events: none;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+  padding: 10px 15px;
+  z-index: 5;
+  height: 30px;
+  line-height: 30 px;
+  margin: auto;
+  color: aqua;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip.active{
+  display: block;
+}
+
+.tooltip::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
