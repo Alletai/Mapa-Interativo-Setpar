@@ -1,0 +1,41 @@
+path {
+  stroke: rgb(212, 227, 255);
+  stroke-width: 2px;
+  fill: #ADCCFF; /* Default fill color */
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+path:hover {
+  fill: rgb(0, 159, 187);
+  stroke: rgb(0, 247, 255);
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  pointer-events: none;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#empreendimento{
+  fill: #025df0;
+}
+
+#empreendimento:hover{
+  fill: #093f97;
+  stroke: #ffffff;
+  cursor: pointer;
+}
+
+path.hovered {
+  stroke: #00f;
+  fill: #ffd700;
+}
